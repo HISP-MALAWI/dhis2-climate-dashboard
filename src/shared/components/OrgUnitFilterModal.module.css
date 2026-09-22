@@ -1,0 +1,18 @@
+.compact [data-test='dhis2-uicore-box'] {
+    min-height: 0 !important;
+}
+
+.compact div[style*='height: 400px'] {
+    height: clamp(160px, 34vh, 320px) !important;
+    max-height: clamp(160px, 34vh, 320px) !important;
+}
+
+.compact div[style*='max-height: 500px'] {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+}
+
+.compact :global(.pb-8) {
+    padding-bottom: 0;
+}

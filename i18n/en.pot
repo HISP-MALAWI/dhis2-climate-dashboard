@@ -1,0 +1,233 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: i18next-conv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"POT-Creation-Date: 2026-09-22T08:47:21.499Z\n"
+"PO-Revision-Date: 2026-09-22T08:47:21.511Z\n"
+
+msgid "Evaluation"
+msgstr "Evaluation"
+
+msgid "Real Cases"
+msgstr "Real Cases"
+
+msgid "80% prediction interval"
+msgstr "80% prediction interval"
+
+msgid "50% prediction interval"
+msgstr "50% prediction interval"
+
+msgid "Median prediction"
+msgstr "Median prediction"
+
+msgid "No data available for this org unit"
+msgstr "No data available for this org unit"
+
+msgid "No results"
+msgstr "No results"
+
+msgid "No evaluation data available"
+msgstr "No evaluation data available"
+
+msgid "No matching counties"
+msgstr "No matching counties"
+
+msgid "States"
+msgstr "States"
+
+msgid "Search states or counties…"
+msgstr "Search states or counties…"
+
+msgid "Counties"
+msgstr "Counties"
+
+msgid "Select a max of {{max}} counties"
+msgstr "Select a max of {{max}} counties"
+
+msgid "Select a state to see counties"
+msgstr "Select a state to see counties"
+
+msgid "Select evaluations to compare…"
+msgstr "Select evaluations to compare…"
+
+msgid "Failed to load evaluations"
+msgstr "Failed to load evaluations"
+
+msgid "Evaluations to compare"
+msgstr "Evaluations to compare"
+
+msgid "No evaluations selected"
+msgstr "No evaluations selected"
+
+msgid "Select two evaluations above to compare their predictions."
+msgstr "Select two evaluations above to compare their predictions."
+
+msgid "No org units selected"
+msgstr "No org units selected"
+
+msgid ""
+"Select counties in the sidebar to view comparison charts. Only counties "
+"with data in the selected evaluations are shown."
+msgstr ""
+"Select counties in the sidebar to view comparison charts. Only counties "
+"with data in the selected evaluations are shown."
+
+msgid "Select a max  of 10 counties"
+msgstr "Select a max  of 10 counties"
+
+msgid "Split period"
+msgstr "Split period"
+
+msgid "Select evaluation…"
+msgstr "Select evaluation…"
+
+msgid "Compare with"
+msgstr "Compare with"
+
+msgid "Select evaluation to compare…"
+msgstr "Select evaluation to compare…"
+
+msgid "Organisation Units"
+msgstr "Organisation Units"
+
+msgid ""
+"Select counties in the sidebar to view evaluation charts. Only counties "
+"with CHAP data are shown."
+msgstr ""
+"Select counties in the sidebar to view evaluation charts. Only counties "
+"with CHAP data are shown."
+
+msgid "Country/States"
+msgstr "Country/States"
+
+msgid "Select a zone to view districts"
+msgstr "Select a zone to view districts"
+
+msgid "Malaria Forecast — {{name}}"
+msgstr "Malaria Forecast — {{name}}"
+
+msgid "Quantiles"
+msgstr "Quantiles"
+
+msgid "Confirmed Cases"
+msgstr "Confirmed Cases"
+
+msgid "Actual Cases"
+msgstr "Actual Cases"
+
+msgid "Threshold type"
+msgstr "Threshold type"
+
+msgid "Select at least one threshold to display"
+msgstr "Select at least one threshold to display"
+
+msgid "No threshold selected"
+msgstr "No threshold selected"
+
+msgid "Choose a threshold type above to compare against actual malaria cases."
+msgstr "Choose a threshold type above to compare against actual malaria cases."
+
+msgid "Threshold vs. Actual Cases — {{name}}"
+msgstr "Threshold vs. Actual Cases — {{name}}"
+
+msgid "Malaria Prevention"
+msgstr "Malaria Prevention"
+
+msgid ""
+"This section provides an overview of key malaria prevention interventions "
+"in South Sudan. It includes insecticide-treated nets (LLINs) distributed "
+"through routine services to EPI and ANC clients, as well as IPTp1 and IPTp3 "
+"provided to pregnant women during antenatal care (ANC). The section also "
+"presents monthly trends in LLIN distribution and a state-level map showing "
+"IPTp3 coverage, helping users understand how malaria prevention "
+"interventions are being delivered across the country."
+msgstr ""
+"This section provides an overview of key malaria prevention interventions "
+"in South Sudan. It includes insecticide-treated nets (LLINs) distributed "
+"through routine services to EPI and ANC clients, as well as IPTp1 and IPTp3 "
+"provided to pregnant women during antenatal care (ANC). The section also "
+"presents monthly trends in LLIN distribution and a state-level map showing "
+"IPTp3 coverage, helping users understand how malaria prevention "
+"interventions are being delivered across the country."
+
+msgid "Malaria Data Reporting Performance"
+msgstr "Malaria Data Reporting Performance"
+
+msgid "Location"
+msgstr "Location"
+
+msgid "Period"
+msgstr "Period"
+
+msgid "Clear filters"
+msgstr "Clear filters"
+
+msgid "Org unit"
+msgstr "Org unit"
+
+msgid "Select Organisation Unit(s)"
+msgstr "Select Organisation Unit(s)"
+
+msgid "Cancel"
+msgstr "Cancel"
+
+msgid "Update"
+msgstr "Update"
+
+msgid "Failed to verify access"
+msgstr "Failed to verify access"
+
+msgid "Access restricted"
+msgstr "Access restricted"
+
+msgid ""
+"This page is only available to members of the FLLOW-M Dashboard System "
+"Admin user group."
+msgstr ""
+"This page is only available to members of the FLLOW-M Dashboard System "
+"Admin user group."
+
+msgid "Visualization Error"
+msgstr "Visualization Error"
+
+msgid "An error occurred while loading the visualization"
+msgstr "An error occurred while loading the visualization"
+
+msgid "The visualization is not ready yet"
+msgstr "The visualization is not ready yet"
+
+msgid "Could not download the visualization"
+msgstr "Could not download the visualization"
+
+msgid "Download"
+msgstr "Download"
+
+msgid "Image (.png)"
+msgstr "Image (.png)"
+
+msgid "Vector image (.svg)"
+msgstr "Vector image (.svg)"
+
+msgid "Excel (.xls)"
+msgstr "Excel (.xls)"
+
+msgid "Chart"
+msgstr "Chart"
+
+msgid "Table"
+msgstr "Table"
+
+msgid "No data"
+msgstr "No data"
+
+msgid "View"
+msgstr "View"
+
+msgid "Full page"
+msgstr "Full page"
+
+msgid "Filters"
+msgstr "Filters"
