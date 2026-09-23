@@ -80,20 +80,7 @@ function CurrentMalariaSituation() {
                             />
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 gap-2 md:grid-cols-3">
-                        <VisualizationItem
-                            id={ANC_POSITIVITY_ID}
-                            className="h-80"
-                        />
-                        <VisualizationItem
-                            id={CONFIRMED_MALE_ID}
-                            className="h-80"
-                        />
-                        <VisualizationItem
-                            id={CONFIRMED_FEMALE_ID}
-                            className="h-80"
-                        />
-                    </div>
+                    
                 </div>
 
                 {/* Right column */}
@@ -102,11 +89,7 @@ function CurrentMalariaSituation() {
                         id={MAP_ID}
                         className="h-120 xl:flex-1 xl:min-h-120"
                     />
-                    <VisualizationItem
-                        id={OUTCOMES_ID}
-                        colors={['#125687', '#43a047', '#e53935']}
-                        className="h-96"
-                    />
+                    
                 </div>
             </div>
 
