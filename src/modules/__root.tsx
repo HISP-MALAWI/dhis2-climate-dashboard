@@ -15,6 +15,7 @@ function RootComponent() {
     const pathname = useRouterState({ select: (s) => s.location.pathname })
     const showFilterBar =
         !pathname.startsWith('/chap-forecast-alerts') &&
+        !pathname.startsWith('/ewars-forecasts-alerts') &&
         !pathname.startsWith('/chap-evaluation') &&
         !pathname.startsWith('/chap-compare') &&
         !pathname.startsWith('/chap-threshold')
