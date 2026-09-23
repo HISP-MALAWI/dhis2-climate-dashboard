@@ -19,6 +19,7 @@ const TABS = [
     { to: '/chap-compare', label: 'Compare Evaluations' },
     { to: '/chap-forecast-alerts', label: 'CHAP Forecast & Alerts' },
     { to: '/chap-threshold', label: 'Threshold Analysis' },
+    {to: '/ewars-forecasts-alerts', label: 'EWARS Forecasts & Alerts'}
 ] as const
 
 export function AppTabs() {
