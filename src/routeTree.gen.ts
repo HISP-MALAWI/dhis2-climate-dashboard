@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './modules/__root'
 import { Route as IndexRouteImport } from './modules/index'
+import { Route as EwarsForecastsAlertsIndexRouteImport } from './modules/ewars-forecasts-alerts/index'
 import { Route as CurrentMalariaSituationIndexRouteImport } from './modules/current-malaria-situation/index'
 import { Route as ClimateMalariaRelationshipIndexRouteImport } from './modules/climate-malaria-relationship/index'
 import { Route as ChapThresholdIndexRouteImport } from './modules/chap-threshold/index'
@@ -22,6 +23,12 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const EwarsForecastsAlertsIndexRoute =
+  EwarsForecastsAlertsIndexRouteImport.update({
+    id: '/ewars-forecasts-alerts/',
+    path: '/ewars-forecasts-alerts/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const CurrentMalariaSituationIndexRoute =
   CurrentMalariaSituationIndexRouteImport.update({
     id: '/current-malaria-situation/',
@@ -63,6 +70,7 @@ export interface FileRoutesByFullPath {
   '/chap-threshold/': typeof ChapThresholdIndexRoute
   '/climate-malaria-relationship/': typeof ClimateMalariaRelationshipIndexRoute
   '/current-malaria-situation/': typeof CurrentMalariaSituationIndexRoute
+  '/ewars-forecasts-alerts/': typeof EwarsForecastsAlertsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -72,6 +80,7 @@ export interface FileRoutesByTo {
   '/chap-threshold': typeof ChapThresholdIndexRoute
   '/climate-malaria-relationship': typeof ClimateMalariaRelationshipIndexRoute
   '/current-malaria-situation': typeof CurrentMalariaSituationIndexRoute
+  '/ewars-forecasts-alerts': typeof EwarsForecastsAlertsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -82,6 +91,7 @@ export interface FileRoutesById {
   '/chap-threshold/': typeof ChapThresholdIndexRoute
   '/climate-malaria-relationship/': typeof ClimateMalariaRelationshipIndexRoute
   '/current-malaria-situation/': typeof CurrentMalariaSituationIndexRoute
+  '/ewars-forecasts-alerts/': typeof EwarsForecastsAlertsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -93,6 +103,7 @@ export interface FileRouteTypes {
     | '/chap-threshold/'
     | '/climate-malaria-relationship/'
     | '/current-malaria-situation/'
+    | '/ewars-forecasts-alerts/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -102,6 +113,7 @@ export interface FileRouteTypes {
     | '/chap-threshold'
     | '/climate-malaria-relationship'
     | '/current-malaria-situation'
+    | '/ewars-forecasts-alerts'
   id:
     | '__root__'
     | '/'
@@ -111,6 +123,7 @@ export interface FileRouteTypes {
     | '/chap-threshold/'
     | '/climate-malaria-relationship/'
     | '/current-malaria-situation/'
+    | '/ewars-forecasts-alerts/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -121,6 +134,7 @@ export interface RootRouteChildren {
   ChapThresholdIndexRoute: typeof ChapThresholdIndexRoute
   ClimateMalariaRelationshipIndexRoute: typeof ClimateMalariaRelationshipIndexRoute
   CurrentMalariaSituationIndexRoute: typeof CurrentMalariaSituationIndexRoute
+  EwarsForecastsAlertsIndexRoute: typeof EwarsForecastsAlertsIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -130,6 +144,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ewars-forecasts-alerts/': {
+      id: '/ewars-forecasts-alerts/'
+      path: '/ewars-forecasts-alerts'
+      fullPath: '/ewars-forecasts-alerts/'
+      preLoaderRoute: typeof EwarsForecastsAlertsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/current-malaria-situation/': {
@@ -185,6 +206,7 @@ const rootRouteChildren: RootRouteChildren = {
   ChapThresholdIndexRoute: ChapThresholdIndexRoute,
   ClimateMalariaRelationshipIndexRoute: ClimateMalariaRelationshipIndexRoute,
   CurrentMalariaSituationIndexRoute: CurrentMalariaSituationIndexRoute,
+  EwarsForecastsAlertsIndexRoute: EwarsForecastsAlertsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
