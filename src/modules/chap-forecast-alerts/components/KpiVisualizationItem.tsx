@@ -9,6 +9,7 @@ interface KpiVisualizationItemProps {
     orgUnitId: string | null
     defaultPeriodIds?: string[]
     className?: string
+    backgroundColor: string
 }
 
 export function KpiVisualizationItem({
@@ -16,6 +17,7 @@ export function KpiVisualizationItem({
     orgUnitId,
     defaultPeriodIds,
     className,
+    backgroundColor,
 }: KpiVisualizationItemProps) {
     const { visualization, loading: vizLoading } = useVisualization({
         visualizationId: id,
@@ -48,6 +50,7 @@ export function KpiVisualizationItem({
         return (
             <div
                 className={`flex items-center justify-center rounded border border-gray-200 bg-white shadow-sm ${className ?? ''}`}
+                style={{ backgroundColor }}
             >
                 <CircularLoader small />
             </div>
@@ -63,6 +66,7 @@ export function KpiVisualizationItem({
             <SingleValueCard
                 visualization={visualization}
                 analytics={analytics}
+                backgroundColor={backgroundColor}
                 loading={loading}
                 showMenu={false}
             />
