@@ -330,7 +330,6 @@ export const PredictionChart = forwardRef<
 
     return (
         <div className="flex h-full flex-col">
-            tdcfvgjhb
             <div className="relative shrink-0 border-b border-gray-200">
                 <TabBar>
                     <div>
