@@ -25,7 +25,7 @@ export const EPIDEMIC_THRESHOLD_LINE: ForecastReferenceLine = {
 export const FIRST_QUARTILE_LINE: ForecastReferenceLine = {
     id: '1st-quartile',
     label: '1st Quartile',
-    indicatorId: 'v81bfitDlJb',
+    indicatorId: 'YoBYm1eOkWG',
     color: '#ca8a04',
     dashStyle: 'ShortDash',
     tableEmphasis: 'neutral',
@@ -34,7 +34,7 @@ export const FIRST_QUARTILE_LINE: ForecastReferenceLine = {
 export const THIRD_QUARTILE_LINE: ForecastReferenceLine = {
     id: '3rd-quartile',
     label: '3rd Quartile',
-    indicatorId: 'yAnvXW6kVNk',
+    indicatorId: 'Ct6Sr0MJkW2',
     color: '#7c3aed',
     dashStyle: 'ShortDash',
     tableEmphasis: 'neutral',
@@ -82,10 +82,10 @@ export const HISTORICAL_MONTHS = 12
 export const PREDICTION_MONTHS = 3
 
 // KPI data element IDs
-export const TOTAL_FEVER_ID = 'D1EMZrhkGP9'
-export const CONFIRMED_FACILITY_ID = 'OLtqBQdJWdW'
-export const CLINICAL_DIAGNOSIS_ID = 'zgZOa9q52CX'
-export const CONFIRMED_COMMUNITY_ID = 'Oxm0IAaulsK'
+export const TOTAL_FEVER_ID = 't8IySCClfv8'
+export const CONFIRMED_FACILITY_ID = 'XQpjhs5iuEC'
+export const CLINICAL_DIAGNOSIS_ID = 'O5jtdxDAgIo'
+export const CONFIRMED_COMMUNITY_ID = 'WryCgx7XIVq'
 
 export const KPI_IDS = [
     TOTAL_FEVER_ID,
