@@ -25,7 +25,7 @@ export const EPIDEMIC_THRESHOLD_LINE: ForecastReferenceLine = {
 export const FIRST_QUARTILE_LINE: ForecastReferenceLine = {
     id: '1st-quartile',
     label: '1st Quartile',
-    indicatorId: 'YoBYm1eOkWG',
+    indicatorId: 'q00EwnZK1zr',
     color: '#ca8a04',
     dashStyle: 'ShortDash',
     tableEmphasis: 'neutral',
@@ -34,7 +34,7 @@ export const FIRST_QUARTILE_LINE: ForecastReferenceLine = {
 export const THIRD_QUARTILE_LINE: ForecastReferenceLine = {
     id: '3rd-quartile',
     label: '3rd Quartile',
-    indicatorId: 'Ct6Sr0MJkW2',
+    indicatorId: 'Xt9CU6ubTWy',
     color: '#7c3aed',
     dashStyle: 'ShortDash',
     tableEmphasis: 'neutral',
