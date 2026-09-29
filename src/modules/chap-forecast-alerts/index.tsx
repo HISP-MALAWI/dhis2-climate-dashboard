@@ -91,13 +91,18 @@ function ChapForecastAlerts() {
 
                 <div className="flex min-w-0 flex-1 flex-col gap-4">
                     <div className="grid grid-cols-4 gap-4">
-                        {[...KPI_IDS].map((id) => (
+                        {[...KPI_IDS].map((id, index) => (
                             <KpiVisualizationItem
                                 key={id}
                                 id={id}
                                 orgUnitId={activeOrgUnit?.id ?? null}
                                 defaultPeriodIds={predictionPeriods}
                                 className="h-36"
+                                backgroundColor={
+                                    index === KPI_IDS.length - 1
+                                        ? '#dc2626'
+                                        : '#125687'
+                                }
                             />
                         ))}
                     </div>
