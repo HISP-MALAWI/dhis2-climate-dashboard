@@ -15,6 +15,7 @@ interface SingleValueCardProps {
     visualization: VisualizationConfig
     analytics?: AnalyticsData
     colors?: string[]
+    backgroundColor?: string
     loading?: boolean
     showMenu?: boolean
     selectedOrgUnits?: string[]
@@ -27,6 +28,7 @@ export function SingleValueCard({
     visualization,
     analytics,
     colors = ['#125687'],
+    backgroundColor,
     loading = false,
     showMenu = true,
     selectedOrgUnits,
@@ -83,7 +85,8 @@ export function SingleValueCard({
         [value, visualization.legend?.set]
     )
     const bgColor =
-        legendStyle === 'FILL' && legendColor ? legendColor : undefined
+        backgroundColor ??
+        (legendStyle === 'FILL' && legendColor ? legendColor : undefined)
     const fgColor = bgColor ? getForeground(bgColor) : undefined
     const valueColor =
         legendStyle === 'TEXT' && legendColor
