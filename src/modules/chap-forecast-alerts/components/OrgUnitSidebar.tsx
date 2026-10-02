@@ -123,11 +123,11 @@ export function OrgUnitSidebar({
 
     return (
         <div className="flex w-52 shrink-0 flex-col overflow-hidden rounded border border-gray-200 bg-white shadow-sm h-168">
-            <SectionHeader label={i18n.t('Country/States')} />
+            <SectionHeader label={i18n.t('National / Zones')} />
             <SearchInput
                 value={query}
                 onChange={setQuery}
-                placeholder={i18n.t('Search states or counties…')}
+                placeholder={i18n.t('Search Zones or Districts')}
             />
             <div className="max-h-64 overflow-y-auto border-b border-gray-200">
                 <OrgUnitList
@@ -139,7 +139,7 @@ export function OrgUnitSidebar({
                 />
             </div>
 
-            <SectionHeader label={i18n.t('Counties')} />
+            <SectionHeader label={i18n.t('Districts')} />
             {!selectedStateId && !isSearching ? (
                 <p className="px-3 py-3 text-xs text-gray-400 italic">
                     {i18n.t('Select a zone to view districts')}

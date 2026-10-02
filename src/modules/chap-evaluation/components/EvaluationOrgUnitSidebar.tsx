@@ -206,11 +206,11 @@ export function EvaluationOrgUnitSidebar({
 
     return (
         <div className="flex w-56 shrink-0 flex-col overflow-hidden self-stretch rounded border border-gray-200 bg-white shadow-sm">
-            <SectionHeader label={i18n.t('States')} />
+            <SectionHeader label={i18n.t('National / Zones')} />
             <SearchInput
                 value={query}
                 onChange={setQuery}
-                placeholder={i18n.t('Search states or counties…')}
+                placeholder={i18n.t('Search Districts or zones…')}
             />
             <div className="max-h-64 overflow-y-auto border-b border-gray-200">
                 <StateList
@@ -222,10 +222,10 @@ export function EvaluationOrgUnitSidebar({
                 />
             </div>
 
-            <SectionHeader label={i18n.t('Counties')} />
+            <SectionHeader label={i18n.t('Districts')} />
 
             <div className="flex items-center justify-between px-3 py-1.5 text-xs text-gray-500">
-                <span>{i18n.t('Select a max  of 10 counties')}</span>
+                <span>{i18n.t('Select a max  of 10 districts')}</span>
                 <span
                     className={
                         selected.length >= MAX_SELECTED_ORG_UNITS
