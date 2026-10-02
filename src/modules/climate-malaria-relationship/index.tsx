@@ -22,17 +22,17 @@ function ClimateMalariaRelationship() {
     return (
         <div className="flex flex-col gap-4">
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                <MapItem id={CLIMATIC_SUITABILITY_MAP_ID} className="h-160" />
+                <MapItem id={CLIMATIC_SUITABILITY_MAP_ID} className="h-200" />
                 <MapItem
                     id={RELATIONSHIP_BTN_CLIMATE_COVARIATES_ID}
-                    className="h-160"
+                    className="h-200"
                 />
             </div>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-1">
                 <VisualizationItem
                     id={PRECIPITATION_CORRELATION_VIZ_ID}
                     forcedPeriodIds={last24Months}
-                    className="h-160"
+                    className="h-200"
                 />
             </div>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
