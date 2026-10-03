@@ -28,6 +28,7 @@ import {
     TIMELINESS_F07_ID,
     TIMELINESS_F19_ID,
     TOTAL_FEVER_ID,
+    PRESUMMED_CASES
 } from './constants'
 import { MapItem } from '@/shared/components/visualizations/MapItem'
 import { VisualizationItem } from '@/shared/components/visualizations/VisualizationItem'
@@ -64,10 +65,16 @@ function CurrentMalariaSituation() {
                 <VisualizationItem id={IPTP1_ID} className="h-40" />
                 <VisualizationItem id={IPTP3_ID} className="h-40" />
             </div>
-            <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
+            <div className="h-150">
                 <VisualizationItem
                     id={MONTHLY_TREND_ID}
                     className="h-96 md:h-full"
+                />
+            </div>
+            <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
+                <MapItem
+                    id={PRESUMMED_CASES}
+                    className="h-200 md:h-full"
                 />
                 <MapItem id={MAP_ID} className="h-200" />
             </div>
